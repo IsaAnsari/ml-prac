@@ -1,0 +1,24 @@
+# Batch Gradient Descent with early stopping for Softmax Regression is an optimization strategy that trains a multi-class classifier using the entire dataset at each step, while halting training as soon as the validation error begins to climb to prevent overfitting.
+
+# Softmax Regression, also known as Multinomial Logistic Regression, is a supervised machine learning algorithm used to classify data into three or more mutually exclusive classes.
+
+# Batch Gradient Descent (BGD) is an optimization algorithm that updates a machine learning model's parameters by calculating the gradient of the cost function across the entire training dataset at once.
+
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+X, y = load_iris(return_X_y = True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size =0.2, random_state=42)
+
+model = LogisticRegression(
+multi_class ='multinomial',
+solver ='sag',
+max_iter =1000 ,
+tol = 1e-3
+)
+
+model.fit(X_train, y_train)
+
+print("Test accuracy :", model.score(X_test, y_test))

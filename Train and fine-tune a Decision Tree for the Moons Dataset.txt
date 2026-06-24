@@ -1,0 +1,17 @@
+# Training and fine-tuning a Decision Tree on the Moons Dataset is a classic machine learning exercise (often found in Aurélien Géron's Hands-On Machine Learning textbook) designed to show you how to fight overfitting. Because the moons dataset contains non-linear, interlocking half-circle shapes, an unconstrained Decision Tree will overfit the noise.
+
+import numpy as np
+from sklearn.datasets import make_moons
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+
+X, y = make_moons(n_samples=10000, noise=0.4, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+param_grid = {'max_leaf_nodes': list(range(2, 50)), 'min_samples_split': [2,3]}
+grid_search = GridSearchCV(DecisionTreeClassifier(random_state=42), param_grid, cv=3)
+grid_search.fit(X_train, y_train)
+
+best_model = grid_search.best_estimator_
+print(f"Test accuracy: {best_model.score(X_test, y_test):.2f}")
