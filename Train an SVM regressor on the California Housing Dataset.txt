@@ -6,6 +6,9 @@ it, and fitting the model.
 
 # Support Vector Regression (SVR) is a supervised machine learning algorithm 
 used to predict continuous numerical values.
+
+Predicts continuous values
+Uses marrgin-based approach
 '''
 
 import pandas as pd
