@@ -1,4 +1,10 @@
-# Training and fine-tuning a Decision Tree on the Moons Dataset is a classic machine learning exercise (often found in Aurélien Géron's Hands-On Machine Learning textbook) designed to show you how to fight overfitting. Because the moons dataset contains non-linear, interlocking half-circle shapes, an unconstrained Decision Tree will overfit the noise.
+'''
+# Training and fine-tuning a Decision Tree on the Moons Dataset is a classic 
+machine learning exercise (often found in Aurélien Géron's Hands-On Machine 
+Learning textbook) designed to show you how to fight overfitting. Because 
+the moons dataset contains non-linear, interlocking half-circle shapes, an 
+unconstrained Decision Tree will overfit the noise.
+'''
 
 import numpy as np
 from sklearn.datasets import make_moons
