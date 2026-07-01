@@ -16,8 +16,7 @@ X = iris.data # Features: sepal length, sepal width, petal length, petal width
 y = iris.target # Target labels: setosa, versicolor, virginica
 target_names = iris.target_names
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
-random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 svm_model = SVC(kernel='linear', random_state=42)
 svm_model.fit(X_train, y_train)
@@ -25,5 +24,4 @@ svm_model.fit(X_train, y_train)
 y_pred = svm_model.predict(X_test)
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
-print("\nClassification Report:\n", classification_report(y_test, y_pred,
-target_names=target_names))
+print("\nClassification Report:\n", classification_report(y_test, y_pred, target_names=target_names))
