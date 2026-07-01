@@ -1,4 +1,9 @@
-# Multinomial logistic regression is a supervised machine learning algorithm used for multi-class classification. It predicts the probability that an observation falls into one of three or more mutually exclusive, unordered categories (e.g., categorizing an email as spam, personal, or work).
+'''
+# Multinomial logistic regression is a supervised machine learning algorithm 
+used for multi-class classification. It predicts the probability that an 
+observation falls into one of three or more mutually exclusive, unordered 
+categories (e.g., categorizing an email as spam, personal, or work).
+'''
 
 from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
