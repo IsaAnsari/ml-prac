@@ -15,8 +15,7 @@ diabetes = datasets.load_diabetes()
 X = diabetes.data[:, np.newaxis, 2]
 y = diabetes.target
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
-random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
 
 regr = linear_model.LinearRegression()
 regr.fit(X_train, y_train)
