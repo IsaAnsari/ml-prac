@@ -1,4 +1,10 @@
-# A Support Vector Machine (SVM) is a powerful supervised machine learning algorithm primarily used for data classification, though it also handles regression tasks. The main objective of an SVM classifier is to find the optimal hyperplane in an N-dimensional space that maximizes the boundary margin between distinct classes.
+'''
+# A Support Vector Machine (SVM) is a powerful supervised machine learning 
+algorithm primarily used for data classification, though it also handles 
+regression tasks. The main objective of an SVM classifier is to find the 
+optimal hyperplane in an N-dimensional space that maximizes the boundary 
+margin between distinct classes.
+'''
 
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
