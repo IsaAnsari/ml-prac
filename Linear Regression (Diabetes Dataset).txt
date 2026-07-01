@@ -1,4 +1,8 @@
-# Linear regression is a supervised machine learning algorithm used to predict continuous numerical values. It models the relationship between a dependent target variable and one or more independent features by fitting a straight line, known as the "line of best fit," to the data.
+'''
+# Linear regression is a supervised machine learning algorithm used to predict continuous numerical values. 
+It models the relationship between a dependent target variable and one or more independent features by 
+fitting a straight line, known as the "line of best fit," to the data.
+'''
 
 import matplotlib.pyplot as plt
 import numpy as np
