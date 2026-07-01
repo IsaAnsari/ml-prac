@@ -1,6 +1,9 @@
 '''
 # Logistic Regression is a supervised machine learning algorithm used to predict the 
 probability of a categorical dependent variable.
+
+Use for classification
+Uses sigmoid function
 '''
 
 import pandas as pd
