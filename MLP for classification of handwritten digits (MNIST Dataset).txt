@@ -1,6 +1,10 @@
-# A Multilayer Perceptron (MLP) can classify the MNIST dataset of handwritten digits with up to 97% to 98% accuracy using a simple feedforward neural network architecture.
+'''
+# A Multilayer Perceptron (MLP) can classify the MNIST dataset of handwritten digits with 
+up to 97% to 98% accuracy using a simple feedforward neural network architecture.
 
-# A Multilayer Perceptron (MLP) is a foundational class of feedforward artificial neural network. It consists of an input layer, one or more hidden layers, and an output layer.
+# A Multilayer Perceptron (MLP) is a foundational class of feedforward artificial neural 
+network. It consists of an input layer, one or more hidden layers, and an output layer.
+'''
 
 from sklearn.datasets import fetch_openml
 from sklearn.neural_network import MLPClassifier
