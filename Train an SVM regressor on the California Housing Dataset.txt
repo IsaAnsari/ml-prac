@@ -1,6 +1,12 @@
-# Training a Support Vector Regressor (SVR) on the Scikit-Learn California Housing Dataset requires standardizing the features due to the algorithm's sensitivity to data scale. The workflow consists of loading the data, scaling it, and fitting the model.
+'''
+# Training a Support Vector Regressor (SVR) on the Scikit-Learn California 
+Housing Dataset requires standardizing the features due to the algorithm's 
+sensitivity to data scale. The workflow consists of loading the data, scaling 
+it, and fitting the model.
 
-# Support Vector Regression (SVR) is a supervised machine learning algorithm used to predict continuous numerical values.
+# Support Vector Regression (SVR) is a supervised machine learning algorithm 
+used to predict continuous numerical values.
+'''
 
 import pandas as pd
 import numpy as np
